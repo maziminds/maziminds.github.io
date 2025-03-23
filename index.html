@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Maziminds is a mobile-first game development studio specializing in creating immersive 3D experiences for players worldwide. We develop games for mobile, PC, and web platforms.">
-    <meta name="keywords" content="Maziminds, game development, mobile games, 3D games, PC games, web games, game studio, indie games, mobile-first development">
+    <meta name="description" content="Maziminds is a mobile-first game development studio specializing in creating immersive 3D experiences for players worldwide. We develop games for mobile, PC, and web platforms. Download our latest games from Google Play and itch.io.">
+    <meta name="keywords" content="Maziminds, game development, mobile games, 3D games, PC games, web games, game studio, indie games, mobile-first development, game development company">
     <meta name="author" content="Maziminds">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -57,283 +57,270 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="logo">
-                <a href="#home" class="logo-link">
+                <a href="#home" class="logo-link" aria-label="Maziminds Home">
                     <img src="images/logo/logo.png" alt="Maziminds Logo" class="logo-img">
                     <span class="logo-text">Maziminds</span>
                 </a>
             </div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#team" class="nav-link">Team</a>
+            <div class="nav-links" role="menubar">
+                <a href="#home" class="nav-link" role="menuitem">Home</a>
+                <a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a>
+                <a href="#services" class="nav-link" role="menuitem">Services</a>
+                <a href="#team" class="nav-link" role="menuitem">Team</a>
                 <!-- <a href="#contact" class="nav-link">Contact</a> -->
             </div>
         </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Maziminds</h1>
-            <p>Creating immersive 3D experiences for players worldwide</p>
-            <div class="scroll-indicator">
-                <span>Scroll Down</span>
-                <i class="fas fa-arrow-down"></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="container">
-            <h2>Our Mission</h2>
-            <p>At Maziminds, we're dedicated to delivering the gaming experience players have been searching for years. Our focus is on crafting mobile-first 3D games that push the boundaries of mobile gaming, while also supporting PC and web platforms.</p>
-        </div>
-    </section>
-
-    <section class="featured" id="featured">
-        <div class="container">
-            <h2>Upcoming Games</h2>
-            <div class="game-grid">
-                <div class="game-card" data-game="alien-blaster">
-                    <div class="game-image">
-                        <!-- Alien Blaster screenshot will go here -->
-                    </div>
-                    <h3>Alien Blaster</h3>
-                    <p>Coming Soon - Mobile</p>
-                    <a href="#" class="download-btn" target="_blank"><i class="fab fa-google-play"></i> Coming Soon</a>
+    <main role="main">
+        <section class="hero" id="home" aria-label="Welcome to Maziminds">
+            <div class="hero-content">
+                <h1>Maziminds</h1>
+                <p>Creating immersive 3D experiences for players worldwide</p>
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <i class="fas fa-arrow-down"></i>
                 </div>
-                <div class="game-card" data-game="fast-foolish">
-                    <div class="game-image">
-                        <!-- Fast & Foolish screenshot will go here -->
-                    </div>
-                    <h3>Fast & Foolish</h3>
-                    <p>PC Game</p>
-                    <a href="#" class="download-btn" target="_blank"><i class="fas fa-download"></i> Download</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio" itemscope itemtype="https://schema.org/Game">
-        <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="game-grid">
-                <!-- True Destination -->
-                <div class="game-card" data-game="true-destination" itemprop="game">
-                    <div class="game-image" style="background-image: url('images/true-destination/main-screenshot.jpg')" itemprop="image">
-                        <img src="images/true-destination/icon.png" alt="True Destination Game Icon" class="game-icon" itemprop="thumbnailUrl">
-                        <div class="game-trailer">
-                            <iframe src="https://www.youtube.com/embed/quvXAKjJ9qM?controls=0&autoplay=1&loop=1&playlist=quvXAKjJ9qM&mute=1" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowfullscreen
-                                    itemprop="trailer"></iframe>
-                        </div>
-                    </div>
-                    <h3 itemprop="name">True Destination</h3>
-                    <p itemprop="genre">2D Pixel Art - Mobile</p>
-                    <p itemprop="genre"><a href="games/true-destination.html" class="read-more-btn">Read More</a></p>
-                    
-                    <a title="Play Store" href="https://play.google.com/store/apps/details?id=com.maziminds.truedestination" class="download-btn" data-target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
-                        <i class="fab fa-google-play"></i> Play Store
-                    </a>
-                    <div style="display: none;" itemprop="description">
-                        True Destination is an immersive 2D pixel art adventure game that combines classic gameplay with modern mechanics. 
-                        Explore a vast world filled with secrets, puzzles, and challenging enemies.
-                    </div>
-                    
-                </div>
-
-                <!-- Pow Pow -->
-                <div class="game-card" data-game="pow-pow" itemprop="game">
-                    <div class="game-image" style="background-image: url('images/pow-pow/main-screenshot.jpg')" itemprop="image">
-                        <img src="images/pow-pow/icon.png" alt="Pow Pow Game Icon" class="game-icon" itemprop="thumbnailUrl">
-                    </div>
-                    <h3 itemprop="name">Pow Pow</h3>
-                    <p itemprop="genre">Mobile Game</p>
-                    <p itemprop="genre"><a href="games/pow-pow.html" class="read-more-btn">Read More</a></p>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.maziminds.powpow" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
-                        <i class="fab fa-google-play"></i> Download
-                    </a>
-                    <div style="display: none;" itemprop="description">
-                        Pow Pow is a fast-paced action game where players battle through waves of enemies using powerful weapons and abilities.
-                    </div>
-                </div>
-
-                <!-- Rummy -->
-                <div class="game-card" data-game="rummy" itemprop="game">
-                    <div class="game-image" style="background-image: url('images/rummy/main-screenshot.jpg')" itemprop="image">
-                        <img src="images/rummy/icon.png" alt="Rummy Game Icon" class="game-icon" itemprop="thumbnailUrl">
-                    </div>
-                    <h3 itemprop="name">Rummy</h3>
-                    <p itemprop="genre">Card Game</p>
-                    <p itemprop="genre"><a href="games/rummy.html" class="read-more-btn">Read More</a></p>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.maziminds.rummy" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
-                        <i class="fab fa-google-play"></i> Download
-                    </a>
-                    <div style="display: none;" itemprop="description">
-                        Rummy is a classic card game reimagined for mobile devices, featuring beautiful graphics and smooth gameplay.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services" itemscope itemtype="https://schema.org/Service">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p class="section-description">We offer a comprehensive range of game development and creative services</p>
-            <div class="services-grid">
-                <!-- 3D Game Development -->
-                <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
-                    <div class="service-icon">
-                        <img src="images/icons/3d-icon.png" alt="3D Game Development" class="service-image">
-                    </div>
-                    <h3 itemprop="name">3D Game Development</h3>
-                    <div class="tools-list">
-                        <p class="tool-icon"><i class="fas fa-gamepad"></i> Unity</p>
-                        <p class="tool-icon"><i class="fas fa-cube"></i> Unreal Engine</p>
-                        <p class="tool-icon"><i class="fas fa-brush"></i> Blender</p>
-                    </div>
-                    <p itemprop="description">We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics.</p>
-                </div>
-
-                <!-- 2D Game Development -->
-                <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
-                    <div class="service-icon">
-                        <img src="images/icons/2d-icon.png" alt="2D Game Development" class="service-image">
-                    </div>
-                    <h3 itemprop="name">2D Game Development</h3>
-                    <div class="tools-list">
-                        <p class="tool-icon"><i class="fas fa-gamepad"></i> Godot</p>
-                        <p class="tool-icon"><i class="fas fa-paint-brush"></i> Aseprite</p>
-                        <p class="tool-icon"><i class="fas fa-code"></i> GDevelop</p>
-                    </div>
-                    <p itemprop="description">From pixel art adventures to modern 2D platformers, we craft engaging games that captivate players.</p>
-                </div>
-
-                <!-- Music Composing -->
-                <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
-                    <div class="service-icon">
-                        <img src="images/icons/music-icon.png" alt="Music Composition" class="service-image">
-                    </div>
-                    <h3 itemprop="name">Music Composition</h3>
-                    <div class="tools-list">
-                        <p class="tool-icon"><i class="fas fa-music"></i> FL Studio</p>
-                        <p class="tool-icon"><i class="fas fa-headphones"></i> Ableton Live</p>
-                        <p class="tool-icon"><i class="fas fa-microphone"></i> Pro Tools</p>
-                    </div>
-                    <p itemprop="description">We create original soundtracks and sound effects that enhance the gaming experience.</p>
-                </div>
-
-                <!-- 3D Modelling -->
-                <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
-                    <div class="service-icon">
-                        <img src="images/icons/modeling-icon.png" alt="3D Modelling" class="service-image">
-                    </div>
-                    <h3 itemprop="name">3D Modelling</h3>
-                    <div class="tools-list">
-                        <p class="tool-icon"><i class="fas fa-cube"></i> Maya</p>
-                        <p class="tool-icon"><i class="fas fa-brush"></i> ZBrush</p>
-                        <p class="tool-icon"><i class="fas fa-paint-brush"></i> Substance Painter</p>
-                    </div>
-                    <p itemprop="description">We create high-quality 3D assets and environments for games and other digital media.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="team" id="team" itemscope itemtype="https://schema.org/Organization">
-        <div class="container">
-            <h2>Our Team</h2>
-            <div class="team-grid">
-                <!-- Team Member 1 -->
-                <div class="team-member" data-member="member1" itemscope itemtype="https://schema.org/Person">
-                    <div class="member-image" style="background-image: url('images/team/member1.jpg')" itemprop="image">
-                        <div class="member-overlay">
-                            <a href="https://portfolio-member1.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 itemprop="name">John Doe</h3>
-                    <p class="role" itemprop="jobTitle">Game Designer</p>
-                    <div class="member-social">
-                        <a href="https://github.com/member1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" itemprop="sameAs">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com/member1" target="_blank" rel="noopener noreferrer" aria-label="Twitter" itemprop="sameAs">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="team-member" data-member="member2" itemscope itemtype="https://schema.org/Person">
-                    <div class="member-image" style="background-image: url('images/team/member2.jpg')" itemprop="image">
-                        <div class="member-overlay">
-                            <a href="https://portfolio-member2.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 itemprop="name">Jane Smith</h3>
-                    <p class="role" itemprop="jobTitle">Lead Developer</p>
-                    <div class="member-social">
-                        <a href="https://github.com/member2" target="_blank" rel="noopener noreferrer" aria-label="GitHub" itemprop="sameAs">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com/member2" target="_blank" rel="noopener noreferrer" aria-label="Twitter" itemprop="sameAs">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="team-member" data-member="member3" itemscope itemtype="https://schema.org/Person">
-                    <div class="member-image" style="background-image: url('images/team/member3.jpg')" itemprop="image">
-                        <div class="member-overlay">
-                            <a href="https://portfolio-member3.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-                                <i class="fas fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 itemprop="name">Mike Johnson</h3>
-                    <p class="role" itemprop="jobTitle">3D Artist</p>
-                    <div class="member-social">
-                        <a href="https://github.com/member3" target="_blank" rel="noopener noreferrer" aria-label="GitHub" itemprop="sameAs">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com/member3" target="_blank" rel="noopener noreferrer" aria-label="Twitter" itemprop="sameAs">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <div class="contact-form-wrapper">
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
             </div>
         </section>
-    </div> -->
 
-    <!-- Include footer -->
-    <footer class="site-footer">
+        <section class="about" id="about">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>At Maziminds, we're dedicated to delivering the gaming experience players have been searching for years. Our focus is on crafting mobile-first 3D games that push the boundaries of mobile gaming, while also supporting PC and web platforms.</p>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="container">
+                <h2>Upcoming Games</h2>
+                <div class="game-grid">
+                    <div class="game-card" data-game="alien-blaster">
+                        <div class="game-image">
+                            <!-- Alien Blaster screenshot will go here -->
+                        </div>
+                        <h3>Alien Blaster</h3>
+                        <p>Coming Soon - Mobile</p>
+                        <a href="#" class="download-btn" target="_blank"><i class="fab fa-google-play"></i> Coming Soon</a>
+                    </div>
+                    <div class="game-card" data-game="fast-foolish">
+                        <div class="game-image">
+                            <!-- Fast & Foolish screenshot will go here -->
+                        </div>
+                        <h3>Fast & Foolish</h3>
+                        <p>PC Game</p>
+                        <a href="#" class="download-btn" target="_blank"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio" aria-label="Our Games Portfolio" itemscope itemtype="https://schema.org/Game">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <div class="game-grid">
+                    <!-- True Destination -->
+                    <div class="game-card" data-game="true-destination" itemprop="game">
+                        <div class="game-image" style="background-image: url('images/true-destination/main-screenshot.jpg')" itemprop="image">
+                            <img src="images/true-destination/icon.png" alt="True Destination Game Icon" class="game-icon" itemprop="thumbnailUrl">
+                            <div class="game-trailer">
+                                <iframe src="https://www.youtube.com/embed/quvXAKjJ9qM?controls=0&autoplay=1&loop=1&playlist=quvXAKjJ9qM&mute=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen
+                                        itemprop="trailer"></iframe>
+                            </div>
+                        </div>
+                        <h3 itemprop="name">True Destination</h3>
+                        <p itemprop="genre">2D Pixel Art - Mobile</p>
+                        <p itemprop="genre"><a href="games/true-destination.html" class="read-more-btn">Read More</a></p>
+                        
+                        <a title="Play Store" href="https://play.google.com/store/apps/details?id=com.maziminds.truedestination" class="download-btn" data-target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
+                            <i class="fab fa-google-play"></i> Play Store
+                        </a>
+                        <div style="display: none;" itemprop="description">
+                            True Destination is an immersive 2D pixel art adventure game that combines classic gameplay with modern mechanics. 
+                            Explore a vast world filled with secrets, puzzles, and challenging enemies.
+                        </div>
+                        
+                    </div>
+
+                    <!-- Pow Pow -->
+                    <div class="game-card" data-game="pow-pow" itemprop="game">
+                        <div class="game-image" style="background-image: url('images/pow-pow/main-screenshot.jpg')" itemprop="image">
+                            <img src="images/pow-pow/icon.png" alt="Pow Pow Game Icon" class="game-icon" itemprop="thumbnailUrl">
+                        </div>
+                        <h3 itemprop="name">Pow Pow</h3>
+                        <p itemprop="genre">Mobile Game</p>
+                        <p itemprop="genre"><a href="games/pow-pow.html" class="read-more-btn">Read More</a></p>
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.maziminds.powpow" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
+                            <i class="fab fa-google-play"></i> Download
+                        </a>
+                        <div style="display: none;" itemprop="description">
+                            Pow Pow is a fast-paced action game where players battle through waves of enemies using powerful weapons and abilities.
+                        </div>
+                    </div>
+
+                    <!-- Rummy -->
+                    <div class="game-card" data-game="rummy" itemprop="game">
+                        <div class="game-image" style="background-image: url('images/rummy/main-screenshot.jpg')" itemprop="image">
+                            <img src="images/rummy/icon.png" alt="Rummy Game Icon" class="game-icon" itemprop="thumbnailUrl">
+                        </div>
+                        <h3 itemprop="name">Rummy</h3>
+                        <p itemprop="genre">Card Game</p>
+                        <p itemprop="genre"><a href="games/rummy.html" class="read-more-btn">Read More</a></p>
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.maziminds.rummy" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
+                            <i class="fab fa-google-play"></i> Download
+                        </a>
+                        <div style="display: none;" itemprop="description">
+                            Rummy is a classic card game reimagined for mobile devices, featuring beautiful graphics and smooth gameplay.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services" itemscope itemtype="https://schema.org/Service">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p class="section-description">We offer a comprehensive range of game development and creative services</p>
+                <div class="services-grid">
+                    <!-- 3D Game Development -->
+                    <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="service-icon">
+                            <img src="images/icons/3d-icon.png" alt="3D Game Development" class="service-image">
+                        </div>
+                        <h3 itemprop="name">3D Game Development</h3>
+                        <div class="tools-list">
+                            <p class="tool-icon"><i class="fas fa-gamepad"></i> Unity</p>
+                            <p class="tool-icon"><i class="fas fa-cube"></i> Unreal Engine</p>
+                            <p class="tool-icon"><i class="fas fa-brush"></i> Blender</p>
+                        </div>
+                        <p itemprop="description">We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics.</p>
+                    </div>
+
+                    <!-- 2D Game Development -->
+                    <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="service-icon">
+                            <img src="images/icons/2d-icon.png" alt="2D Game Development" class="service-image">
+                        </div>
+                        <h3 itemprop="name">2D Game Development</h3>
+                        <div class="tools-list">
+                            <p class="tool-icon"><i class="fas fa-gamepad"></i> Godot</p>
+                            <p class="tool-icon"><i class="fas fa-paint-brush"></i> Aseprite</p>
+                            <p class="tool-icon"><i class="fas fa-code"></i> GDevelop</p>
+                        </div>
+                        <p itemprop="description">From pixel art adventures to modern 2D platformers, we craft engaging games that captivate players.</p>
+                    </div>
+
+                    <!-- Music Composing -->
+                    <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="service-icon">
+                            <img src="images/icons/music-icon.png" alt="Music Composition" class="service-image">
+                        </div>
+                        <h3 itemprop="name">Music Composition</h3>
+                        <div class="tools-list">
+                            <p class="tool-icon"><i class="fas fa-music"></i> FL Studio</p>
+                            <p class="tool-icon"><i class="fas fa-headphones"></i> Ableton Live</p>
+                            <p class="tool-icon"><i class="fas fa-microphone"></i> Pro Tools</p>
+                        </div>
+                        <p itemprop="description">We create original soundtracks and sound effects that enhance the gaming experience.</p>
+                    </div>
+
+                    <!-- 3D Modelling -->
+                    <div class="service-card" itemscope itemtype="https://schema.org/CreativeWork">
+                        <div class="service-icon">
+                            <img src="images/icons/modeling-icon.png" alt="3D Modelling" class="service-image">
+                        </div>
+                        <h3 itemprop="name">3D Modelling</h3>
+                        <div class="tools-list">
+                            <p class="tool-icon"><i class="fas fa-cube"></i> Maya</p>
+                            <p class="tool-icon"><i class="fas fa-brush"></i> ZBrush</p>
+                            <p class="tool-icon"><i class="fas fa-paint-brush"></i> Substance Painter</p>
+                        </div>
+                        <p itemprop="description">We create high-quality 3D assets and environments for games and other digital media.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="team" aria-label="Our Development Team" itemscope itemtype="https://schema.org/Organization">
+            <div class="container">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-member" data-member="member1" itemscope itemtype="https://schema.org/Person">
+                        <div class="member-image" style="background-image: url('images/team/member1.jpg')" itemprop="image">
+                            <div class="member-overlay">
+                                <a href="https://portfolio-member1.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 itemprop="name">John Doe</h3>
+                        <p class="role" itemprop="jobTitle">Game Designer</p>
+                        <div class="member-social">
+                            <a href="https://github.com/member1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" itemprop="sameAs">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/member1" target="_blank" rel="noopener noreferrer" aria-label="Twitter" itemprop="sameAs">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member" data-member="member2" itemscope itemtype="https://schema.org/Person">
+                        <div class="member-image" style="background-image: url('images/team/member2.jpg')" itemprop="image">
+                            <div class="member-overlay">
+                                <a href="https://portfolio-member2.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 itemprop="name">Jane Smith</h3>
+                        <p class="role" itemprop="jobTitle">Lead Developer</p>
+                        <div class="member-social">
+                            <a href="https://github.com/member2" target="_blank" rel="noopener noreferrer" aria-label="GitHub" itemprop="sameAs">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/member2" target="_blank" rel="noopener noreferrer" aria-label="Twitter" itemprop="sameAs">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member" data-member="member3" itemscope itemtype="https://schema.org/Person">
+                        <div class="member-image" style="background-image: url('images/team/member3.jpg')" itemprop="image">
+                            <div class="member-overlay">
+                                <a href="https://portfolio-member3.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 itemprop="name">Mike Johnson</h3>
+                        <p class="role" itemprop="jobTitle">3D Artist</p>
+                        <div class="member-social">
+                            <a href="https://github.com/member3" target="_blank" rel="noopener noreferrer" aria-label="GitHub" itemprop="sameAs">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/member3" target="_blank" rel="noopener noreferrer" aria-label="Twitter" itemprop="sameAs">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="social-links">
