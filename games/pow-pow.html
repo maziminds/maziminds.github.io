@@ -6,93 +6,138 @@
     <title>Pow Pow - Maziminds</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="logo">
-                <a href="../index.html" class="logo-link">
+                <a href="../index.html" class="logo-link" aria-label="Maziminds Home">
                     <img src="../images/logo/logo.png" alt="Maziminds Logo" class="logo-img">
                     <span class="logo-text">Maziminds</span>
                 </a>
             </div>
+            <div class="nav-links" role="menubar">
+                <a href="../index.html#portfolio" class="nav-link" role="menuitem">Portfolio</a>
+                <a href="../index.html#services" class="nav-link" role="menuitem">Services</a>
+                <a href="../index.html#team" class="nav-link" role="menuitem">Team</a>
+            </div>
         </div>
     </nav>
 
-    <section class="game-page" id="pow-pow">
-        <div class="container">
-            <div class="game-header">
-                <div class="game-image" style="background-image: url('../images/pow-pow/main-screenshot.jpg')" itemprop="image">
-                    <img src="../images/pow-pow/icon.png" alt="Pow Pow Game Icon" class="game-icon" itemprop="thumbnailUrl">
+    <main role="main">
+        <section class="game-page-header" id="pow-pow" aria-label="Pow Pow Game Information">
+            <div class="container">
+                <div class="back-button">
+                    <a href="../index.html" class="btn btn-secondary" aria-label="Back to Portfolio">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
                 </div>
-                <div class="game-info">
-                    <h1 itemprop="name">Pow Pow</h1>
-                    <p class="game-genre" itemprop="genre">Mobile Game</p>
-                    <div class="game-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.maziminds.powpow" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
-                            <i class="fab fa-google-play"></i> Download
-                        </a>
+                
+                <div class="game-header">
+                    <div class="game-image" style="background-image: url('../images/pow-pow/main-screenshot.jpg')" itemprop="image">
+                        <img src="../images/pow-pow/icon.png" alt="Pow Pow Game Icon" class="game-icon" itemprop="thumbnailUrl">
+                    </div>
+                    <div class="game-info">
+                        <h1 itemprop="name">Pow Pow</h1>
+                        <p class="game-genre" itemprop="genre">Mobile Game</p>
+                        <div class="game-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.maziminds.powpow" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform" aria-label="Download Pow Pow from Google Play">
+                                <i class="fab fa-google-play"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-trailer-section">
+                    <div class="game-trailer-container">
+                        <iframe src="https://www.youtube.com/embed/Lul9pRvsZeI?controls=1&autoplay=0&loop=0&mute=0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                title="Pow Pow Trailer"
+                                aria-label="Pow Pow Game Trailer"></iframe>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="game-content">
-                <div class="game-description">
-                    <h2>About Pow Pow</h2>
-                    <p itemprop="description">Pow Pow is a fast-paced action game where players battle through waves of enemies using powerful weapons and abilities. The game features beautiful graphics and intense gameplay.</p>
-                    <p>The game features:</p>
-                    <ul>
-                        <li>Fast-paced action gameplay</li>
-                        <li>Multiple weapons and abilities</li>
-                        <li>Progressive difficulty levels</li>
-                        <li>Power-ups and special attacks</li>
-                        <li>Leaderboards and achievements</li>
-                    </ul>
-                </div>
+        <section class="game-content" aria-label="Pow Pow Game Details">
+            <div class="container">
+                <div class="game-info-section">
+                    <div class="game-description">
+                        <h2>About Pow Pow</h2>
+                        <p itemprop="description">Pow Pow is a fast-paced action game where players battle through waves of enemies using powerful weapons and abilities. The game features beautiful graphics and intense gameplay.</p>
+                        <p>The game features:</p>
+                        <ul>
+                            <li>Fast-paced action gameplay</li>
+                            <li>Multiple weapons and abilities</li>
+                            <li>Progressive difficulty levels</li>
+                            <li>Power-ups and special attacks</li>
+                            <li>Leaderboards and achievements</li>
+                        </ul>
+                    </div>
 
-                <div class="game-features">
-                    <h2>Key Features</h2>
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <i class="fas fa-bolt"></i>
-                            <h3>Action</h3>
-                            <p>Fast-paced gameplay with responsive controls</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-crosshairs"></i>
-                            <h3>Weapons</h3>
-                            <p>Diverse arsenal of weapons to choose from</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-star"></i>
-                            <h3>Progression</h3>
-                            <p>Level up and unlock new abilities</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-trophy"></i>
-                            <h3>Competitive</h3>
-                            <p>Compete on global leaderboards</p>
+                    <div class="game-features">
+                        <h2>Key Features</h2>
+                        <div class="feature-grid">
+                            <div class="feature-card" role="article">
+                                <i class="fas fa-bolt"></i>
+                                <h3>Action</h3>
+                                <p>Fast-paced gameplay with responsive controls</p>
+                            </div>
+                            <div class="feature-card" role="article">
+                                <i class="fas fa-crosshairs"></i>
+                                <h3>Weapons</h3>
+                                <p>Diverse arsenal of weapons to choose from</p>
+                            </div>
+                            <div class="feature-card" role="article">
+                                <i class="fas fa-star"></i>
+                                <h3>Progression</h3>
+                                <p>Level up and unlock new abilities</p>
+                            </div>
+                            <div class="feature-card" role="article">
+                                <i class="fas fa-trophy"></i>
+                                <h3>Competitive</h3>
+                                <p>Compete on global leaderboards</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="game-screenshots">
-                    <h2>Screenshots</h2>
-                    <div class="screenshot-grid">
-                        <div class="screenshot-item">
-                            <img src="../images/pow-pow/screenshot-1.jpg" alt="Pow Pow Screenshot 1">
+                    <div class="game-screenshots">
+                        <h2>Screenshots</h2>
+                        <div class="screenshot-carousel">
+                            <div class="screenshot-slide">
+                                <img src="../images/pow-pow/screenshots/screenshot-1.jpg" alt="Pow Pow Screenshot 1">
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="../images/pow-pow/screenshots/screenshot-2.jpg" alt="Pow Pow Screenshot 2">
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="../images/pow-pow/screenshots/screenshot-3.jpg" alt="Pow Pow Screenshot 3">
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="../images/pow-pow/screenshots/screenshot-4.jpg" alt="Pow Pow Screenshot 4">
+                            </div>
+                            <div class="screenshot-slide">
+                                <img src="../images/pow-pow/screenshots/screenshot-5.jpg" alt="Pow Pow Screenshot 5">
+                            </div>
                         </div>
-                        <div class="screenshot-item">
-                            <img src="../images/pow-pow/screenshot-2.jpg" alt="Pow Pow Screenshot 2">
-                        </div>
-                        <div class="screenshot-item">
-                            <img src="../images/pow-pow/screenshot-3.jpg" alt="Pow Pow Screenshot 3">
+
+                        <div class="screenshot-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Include footer -->
     <div w3-include-html="../includes/footer.html"></div>
@@ -133,13 +178,47 @@
 
         const downloadBtns = document.querySelectorAll('.download-btn');
         downloadBtns.forEach(btn => {
-            if (btn.getAttribute('data-target') === '_blank') {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    window.open(btn.href, '_blank');
-                });
-            }
+            btn.addEventListener('click', function() {
+                this.classList.add('clicked');
+                setTimeout(() => this.classList.remove('clicked'), 300);
+            });
         });
+
+        // Carousel functionality
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("screenshot-slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Auto slide function
+        function autoSlide() {
+            plusSlides(1);
+        }
+
+        // Start auto sliding
+        setInterval(autoSlide, 3000); 
     </script>
 </body>
 </html>
