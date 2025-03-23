@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/Game">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rummy - Maziminds</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo/logo.png" alt="Maziminds Logo" class="logo-img">
+                    <span class="logo-text">Maziminds</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="game-page" id="rummy">
+        <div class="container">
+            <div class="game-header">
+                <div class="game-image" style="background-image: url('../images/rummy/main-screenshot.jpg')" itemprop="image">
+                    <img src="../images/rummy/icon.png" alt="Rummy Game Icon" class="game-icon" itemprop="thumbnailUrl">
+                </div>
+                <div class="game-info">
+                    <h1 itemprop="name">Rummy</h1>
+                    <p class="game-genre" itemprop="genre">Card Game</p>
+                    <div class="game-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.maziminds.rummy" class="download-btn" target="_blank" rel="noopener noreferrer" itemprop="gamePlatform">
+                            <i class="fab fa-google-play"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-content">
+                <div class="game-description">
+                    <h2>About Rummy</h2>
+                    <p itemprop="description">Rummy is a classic card game reimagined for mobile devices, featuring beautiful graphics and smooth gameplay. The game brings the traditional card game experience to modern devices.</p>
+                    <p>The game features:</p>
+                    <ul>
+                        <li>Beautiful card animations</li>
+                        <li>Multiple game variations</li>
+                        <li>AI opponents of varying difficulty</li>
+                        <li>Multiplayer support</li>
+                        <li>Daily challenges and rewards</li>
+                    </ul>
+                </div>
+
+                <div class="game-features">
+                    <h2>Key Features</h2>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-cards"></i>
+                            <h3>Gameplay</h3>
+                            <p>Classic rummy rules with modern twist</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Multiplayer</h3>
+                            <p>Play with friends or random opponents</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Competitive</h3>
+                            <p>Leaderboards and daily challenges</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-cog"></i>
+                            <h3>Customization</h3>
+                            <p>Customize your game experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-screenshots">
+                    <h2>Screenshots</h2>
+                    <div class="screenshot-grid">
+                        <div class="screenshot-item">
+                            <img src="../images/rummy/screenshot-1.jpg" alt="Rummy Screenshot 1">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="../images/rummy/screenshot-2.jpg" alt="Rummy Screenshot 2">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="../images/rummy/screenshot-3.jpg" alt="Rummy Screenshot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include footer -->
+    <div w3-include-html="../includes/footer.html"></div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Include HTML files
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }       
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+
+        // Call includeHTML() when the page loads
+        document.addEventListener("DOMContentLoaded", includeHTML);
+
+        const downloadBtns = document.querySelectorAll('.download-btn');
+        downloadBtns.forEach(btn => {
+            if (btn.getAttribute('data-target') === '_blank') {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.open(btn.href, '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

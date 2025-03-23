@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maziminds.com/sitemap.xml
+
+# Allow crawling of all pages
+Allow: /#portfolio
+Allow: /#true-destination
+Allow: /#alien-blaster
+Allow: /#fast-foolish
+Allow: /#team
+Allow: /#member1
+Allow: /#member2
+Allow: /#member3
+
+# Allow social media crawling
+Allow: /social-links
+
+# Disallow crawling of specific directories
+Disallow: /images/
+Disallow: /css/
+Disallow: /js/
+
+# Allow crawling of game assets
+Allow: /images/true-destination/
+Allow: /images/alien-blaster/
+Allow: /images/fast-foolish/
+Allow: /images/team/
+
+# Allow crawling of social media links
+Allow: /social-links

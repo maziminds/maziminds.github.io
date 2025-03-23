@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://maziminds.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <!-- Portfolio Pages -->
+    <url>
+        <loc>https://maziminds.com/#portfolio</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <!-- Individual Games -->
+    <url>
+        <loc>https://maziminds.com/#true-destination</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <url>
+        <loc>https://maziminds.com/#alien-blaster</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <url>
+        <loc>https://maziminds.com/#fast-foolish</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <!-- Team Page -->
+    <url>
+        <loc>https://maziminds.com/#team</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <!-- Individual Team Members -->
+    <url>
+        <loc>https://maziminds.com/#member1</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <url>
+        <loc>https://maziminds.com/#member2</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <url>
+        <loc>https://maziminds.com/#member3</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <lastmod>2025-03-23</lastmod>
+    </url>
+
+    <!-- Social Media Pages -->
+    <url>
+        <loc>https://instagram.com/maziminds</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://maziminds.itch.io</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://youtube.com/@maziminds</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://github.com/maziminds</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://x.com/maziminds</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.4</priority>
+    </url>
+</urlset>
